@@ -1,0 +1,280 @@
+Searching for programs with 3 operations.
+
+Found a 3-operation program:
+   not   r1,rx
+   add   r2,r1,ry
+   divu  r3,r2,-1
+   Expr: ((~(x) + y) /u -1)
+
+Found a 3-operation program:
+   not   r1,rx
+   xor   r2,r1,ry
+   divu  r3,r2,-1
+   Expr: ((~(x) ^ y) /u -1)
+
+Found a 3-operation program:
+   not   r1,ry
+   add   r2,r1,rx
+   divu  r3,r2,-1
+   Expr: ((~(y) + x) /u -1)
+
+Found a 3-operation program:
+   not   r1,ry
+   xor   r2,r1,rx
+   divu  r3,r2,-1
+   Expr: ((~(y) ^ x) /u -1)
+
+Found a 3-operation program:
+   add   r1,rx,1
+   sub   r2,ry,r1
+   divu  r3,r2,-1
+   Expr: ((y - (x + 1)) /u -1)
+
+Found a 3-operation program:
+   add   r1,ry,1
+   sub   r2,rx,r1
+   divu  r3,r2,-1
+   Expr: ((x - (y + 1)) /u -1)
+
+Found a 3-operation program:
+   add   r1,rx,0x80000000
+   sub   r2,r1,ry
+   div   r3,r2,0x80000000
+   Expr: (((x + 0x80000000) - y)/0x80000000)
+
+Found a 3-operation program:
+   add   r1,rx,0x80000000
+   sub   r2,ry,r1
+   div   r3,r2,0x80000000
+   Expr: ((y - (x + 0x80000000))/0x80000000)
+
+Found a 3-operation program:
+   add   r1,rx,0x80000000
+   xor   r2,r1,ry
+   div   r3,r2,0x80000000
+   Expr: (((x + 0x80000000) ^ y)/0x80000000)
+
+Found a 3-operation program:
+   add   r1,ry,0x80000000
+   sub   r2,r1,rx
+   div   r3,r2,0x80000000
+   Expr: (((y + 0x80000000) - x)/0x80000000)
+
+Found a 3-operation program:
+   add   r1,ry,0x80000000
+   sub   r2,rx,r1
+   div   r3,r2,0x80000000
+   Expr: ((x - (y + 0x80000000))/0x80000000)
+
+Found a 3-operation program:
+   add   r1,ry,0x80000000
+   xor   r2,r1,rx
+   div   r3,r2,0x80000000
+   Expr: (((y + 0x80000000) ^ x)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,rx,1
+   sub   r2,r1,ry
+   divu  r3,r2,-1
+   Expr: (((x - 1) - y) /u -1)
+
+Found a 3-operation program:
+   sub   r1,ry,1
+   sub   r2,r1,rx
+   divu  r3,r2,-1
+   Expr: (((y - 1) - x) /u -1)
+
+Found a 3-operation program:
+   sub   r1,rx,0x80000000
+   sub   r2,r1,ry
+   div   r3,r2,0x80000000
+   Expr: (((x - 0x80000000) - y)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,rx,0x80000000
+   sub   r2,ry,r1
+   div   r3,r2,0x80000000
+   Expr: ((y - (x - 0x80000000))/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,rx,0x80000000
+   xor   r2,r1,ry
+   div   r3,r2,0x80000000
+   Expr: (((x - 0x80000000) ^ y)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,ry,0x80000000
+   sub   r2,r1,rx
+   div   r3,r2,0x80000000
+   Expr: (((y - 0x80000000) - x)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,ry,0x80000000
+   sub   r2,rx,r1
+   div   r3,r2,0x80000000
+   Expr: ((x - (y - 0x80000000))/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,ry,0x80000000
+   xor   r2,r1,rx
+   div   r3,r2,0x80000000
+   Expr: (((y - 0x80000000) ^ x)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,0x80000000,rx
+   add   r2,r1,ry
+   div   r3,r2,0x80000000
+   Expr: (((0x80000000 - x) + y)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,ry,rx
+   not   r2,r1
+   divu  r3,r2,-1
+   Expr: (~((y - x)) /u -1)
+
+Found a 3-operation program:
+   sub   r1,ry,rx
+   add   r2,r1,0x80000000
+   div   r3,r2,0x80000000
+   Expr: (((y - x) + 0x80000000)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,ry,rx
+   sub   r2,r1,1
+   divu  r3,r2,-1
+   Expr: (((y - x) - 1) /u -1)
+
+Found a 3-operation program:
+   sub   r1,ry,rx
+   sub   r2,r1,0x80000000
+   div   r3,r2,0x80000000
+   Expr: (((y - x) - 0x80000000)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,ry,rx
+   sub   r2,0x80000000,r1
+   div   r3,r2,0x80000000
+   Expr: ((0x80000000 - (y - x))/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,ry,rx
+   xor   r2,r1,0x80000000
+   div   r3,r2,0x80000000
+   Expr: (((y - x) ^ 0x80000000)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,0x80000000,ry
+   add   r2,r1,rx
+   div   r3,r2,0x80000000
+   Expr: (((0x80000000 - y) + x)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,rx,ry
+   not   r2,r1
+   divu  r3,r2,-1
+   Expr: (~((x - y)) /u -1)
+
+Found a 3-operation program:
+   sub   r1,rx,ry
+   add   r2,r1,0x80000000
+   div   r3,r2,0x80000000
+   Expr: (((x - y) + 0x80000000)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,rx,ry
+   sub   r2,r1,1
+   divu  r3,r2,-1
+   Expr: (((x - y) - 1) /u -1)
+
+Found a 3-operation program:
+   sub   r1,rx,ry
+   sub   r2,r1,0x80000000
+   div   r3,r2,0x80000000
+   Expr: (((x - y) - 0x80000000)/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,rx,ry
+   sub   r2,0x80000000,r1
+   div   r3,r2,0x80000000
+   Expr: ((0x80000000 - (x - y))/0x80000000)
+
+Found a 3-operation program:
+   sub   r1,rx,ry
+   xor   r2,r1,0x80000000
+   div   r3,r2,0x80000000
+   Expr: (((x - y) ^ 0x80000000)/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,rx,0x80000000
+   sub   r2,r1,ry
+   div   r3,r2,0x80000000
+   Expr: (((x ^ 0x80000000) - y)/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,rx,0x80000000
+   sub   r2,ry,r1
+   div   r3,r2,0x80000000
+   Expr: ((y - (x ^ 0x80000000))/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,rx,0x80000000
+   xor   r2,r1,ry
+   div   r3,r2,0x80000000
+   Expr: (((x ^ 0x80000000) ^ y)/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,ry,0x80000000
+   sub   r2,r1,rx
+   div   r3,r2,0x80000000
+   Expr: (((y ^ 0x80000000) - x)/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,ry,0x80000000
+   sub   r2,rx,r1
+   div   r3,r2,0x80000000
+   Expr: ((x - (y ^ 0x80000000))/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,ry,0x80000000
+   xor   r2,r1,rx
+   div   r3,r2,0x80000000
+   Expr: (((y ^ 0x80000000) ^ x)/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,ry,rx
+   not   r2,r1
+   divu  r3,r2,-1
+   Expr: (~((y ^ x)) /u -1)
+
+Found a 3-operation program:
+   xor   r1,ry,rx
+   add   r2,r1,0x80000000
+   div   r3,r2,0x80000000
+   Expr: (((y ^ x) + 0x80000000)/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,ry,rx
+   sub   r2,r1,1
+   divu  r3,r2,-1
+   Expr: (((y ^ x) - 1) /u -1)
+
+Found a 3-operation program:
+   xor   r1,ry,rx
+   sub   r2,r1,0x80000000
+   div   r3,r2,0x80000000
+   Expr: (((y ^ x) - 0x80000000)/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,ry,rx
+   sub   r2,0x80000000,r1
+   div   r3,r2,0x80000000
+   Expr: ((0x80000000 - (y ^ x))/0x80000000)
+
+Found a 3-operation program:
+   xor   r1,ry,rx
+   xor   r2,r1,0x80000000
+   div   r3,r2,0x80000000
+   Expr: (((y ^ x) ^ 0x80000000)/0x80000000)
+Found 46 solutions.
+Counters = 1177788, 1213399, 3093481, total = 5484668
+Process time = 0.104 secs

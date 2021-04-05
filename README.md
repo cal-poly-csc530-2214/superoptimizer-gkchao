@@ -1,0 +1,9 @@
+# Assignment 1 - Superoptimizer
+
+In this assignment, I went with working with Henry Warren's "AHA" (A Hacker's Assistant). This code is mostly the same as the code in the "distrib" branch from the github repo: https://github.com/dpt/Aha, but I made some changes since the original code didn't compile for me. The changes were typecasting unsigned ints to integers in the values to be assigned to the "trialx" and "trialy" arrays in aha.h.
+
+Since the code wouldn't compile for me at the start, I had to take some time to fix errors. After, I mostly experimented with how changing the instruction sets would affect the output from AHA. Most of my findings feel obvious in hindsight, but I still thought it was interesting to see how the superoptimizer decided to "recreate" the inputted code. For example, if I left "cmpeq" in the instruction set, an "equal" function would simply return a one line with the "cmpeq" instruction. Naturally, with a larger instruction set, the time to check for "valid" code was longer but it also helped give more options and possibly reduce the number of instructions required as well.
+
+The functions I chose to create were examples from Henry Massalin's "Superoptimizer: a look at the smallest program."
+
+If I were to work on this again, I would have looked to see how to optimize "AHA" to run faster. Near the end of my testing, I compared the runtimes of the "distrib" to the "master" branch and the "distrib" branch was much slower, but usually had almost double the number of "valid" operations found. I believe that the "master" branch code probably reduced the number of outputs by removing "redundant" code that did almost the same thing, but I didn't have time to verify.

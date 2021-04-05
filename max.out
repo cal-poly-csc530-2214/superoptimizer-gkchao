@@ -1,0 +1,88 @@
+Searching for programs with 4 operations.
+
+Found a 4-operation program:
+   sub   r1,ry,rx
+   cmplt r2,ry,rx
+   mul   r3,r2,r1
+   sub   r4,ry,r3
+   Expr: (y - ((y < x)*(y - x)))
+
+Found a 4-operation program:
+   sub   r1,ry,rx
+   cmplt r2,rx,ry
+   mul   r3,r2,r1
+   add   r4,r3,rx
+   Expr: (((x < y)*(y - x)) + x)
+
+Found a 4-operation program:
+   sub   r1,rx,ry
+   cmplt r2,ry,rx
+   mul   r3,r2,r1
+   add   r4,r3,ry
+   Expr: (((y < x)*(x - y)) + y)
+
+Found a 4-operation program:
+   sub   r1,rx,ry
+   cmplt r2,rx,ry
+   mul   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x < y)*(x - y)))
+
+Found a 4-operation program:
+   xor   r1,ry,rx
+   cmplt r2,ry,rx
+   mul   r3,r2,r1
+   xor   r4,r3,ry
+   Expr: (((y < x)*(y ^ x)) ^ y)
+
+Found a 4-operation program:
+   xor   r1,ry,rx
+   cmplt r2,rx,ry
+   mul   r3,r2,r1
+   xor   r4,r3,rx
+   Expr: (((x < y)*(y ^ x)) ^ x)
+
+Found a 4-operation program:
+   cmplt r1,ry,rx
+   sub   r2,ry,rx
+   mul   r3,r2,r1
+   sub   r4,ry,r3
+   Expr: (y - ((y - x)*(y < x)))
+
+Found a 4-operation program:
+   cmplt r1,ry,rx
+   sub   r2,rx,ry
+   mul   r3,r2,r1
+   add   r4,r3,ry
+   Expr: (((x - y)*(y < x)) + y)
+
+Found a 4-operation program:
+   cmplt r1,ry,rx
+   xor   r2,ry,rx
+   mul   r3,r2,r1
+   xor   r4,r3,ry
+   Expr: (((y ^ x)*(y < x)) ^ y)
+
+Found a 4-operation program:
+   cmplt r1,rx,ry
+   sub   r2,ry,rx
+   mul   r3,r2,r1
+   add   r4,r3,rx
+   Expr: (((y - x)*(x < y)) + x)
+
+Found a 4-operation program:
+   cmplt r1,rx,ry
+   sub   r2,rx,ry
+   mul   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x - y)*(x < y)))
+
+Found a 4-operation program:
+   cmplt r1,rx,ry
+   xor   r2,ry,rx
+   mul   r3,r2,r1
+   xor   r4,r3,rx
+   Expr: (((y ^ x)*(x < y)) ^ x)
+Found 12 solutions.
+Counters = 572746122, 572908938, 692159892, 51606642, total = 1889421594
+Process time = 129.889 secs

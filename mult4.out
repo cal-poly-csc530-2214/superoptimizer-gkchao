@@ -1,0 +1,8 @@
+Searching for programs with 1 operations.
+
+Found a 1-operation program:
+   shl   r1,rx,2
+   Expr: (x << 2)
+Found 1 solutions.
+Counters = 113, total = 113
+Process time = 0.001 secs

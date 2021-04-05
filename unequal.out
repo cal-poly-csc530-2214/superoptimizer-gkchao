@@ -1,0 +1,24 @@
+Searching for programs with 2 operations.
+
+Found a 2-operation program:
+   cmpeq r1,ry,rx
+   sub   r2,1,r1
+   Expr: (1 - (y == x))
+
+Found a 2-operation program:
+   cmpeq r1,ry,rx
+   xor   r2,r1,1
+   Expr: ((y == x) ^ 1)
+
+Found a 2-operation program:
+   cmpeq r1,ry,rx
+   shr   r2,1,r1
+   Expr: (1 >>u (y == x))
+
+Found a 2-operation program:
+   cmpeq r1,ry,rx
+   cmpeq r2,r1,0
+   Expr: ((y == x) == 0)
+Found 4 solutions.
+Counters = 17958, 58722, total = 76680
+Process time = 0.005 secs
